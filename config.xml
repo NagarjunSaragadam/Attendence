@@ -33,14 +33,9 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#778899" />
     <preference name="StatusBarStyle" value="lightcontent" />	
-
-    <!--<plugin name="cordova-plugin-barcodescanner" source="npm" /> for only Android 5x  #ff6a00-->
-    <plugin name="cordova-plugin-barcode-scanner2" source="npm"/>  <!--plugin for Qr Code read Android 5x,6x,7x-->
     <plugin name="cordova-plugin-battery-status" source="npm" />
     <plugin name="cordova-plugin-camera" source="npm" />
-    <plugin name="cordova-plugin-device" source="npm" />
-    <plugin name="cordova-plugin-device-motion" source="npm" />
-    <plugin name="cordova-plugin-device-orientation" source="npm" />
+    <plugin name="cordova-plugin-device" source="npm" />        
     <plugin name="cordova-plugin-dialogs" source="npm" />
     <!-- <plugin name="cordova-plugin-file" source="npm" /> 
     <plugin name="cordova-plugin-file-transfer" source="npm" />-->    
@@ -52,8 +47,7 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" />
     <plugin name="cordova-plugin-vibration" source="npm" />
     <plugin name="uk.co.workingedge.cordova.plugin.sqliteporter" source="npm" />
-    <plugin name="cordova-plugin-statusbar" source="npm" />
-    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-statusbar" source="npm" />    
     <plugin name="imeiplugin" source="npm" />
     <plugin name="phonegap-nfc" source="npm" />	
 	<preference name="android-minSdkVersion" value="14" />
