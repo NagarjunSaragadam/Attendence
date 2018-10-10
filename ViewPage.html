@@ -1,0 +1,320 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from p.w3layouts.com/demos/oct-2016/12-10-2016/cook_house/web/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Jul 2018 09:51:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Collage App</title> 
+<!-- For-Mobile-Apps-and-Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cookhouse Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, SmartPhone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps-and-Meta-Tags -->
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css" />
+<!-- //Custom Theme files -->
+<!-- font-awesome-icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome-icons -->
+<!-- js -->
+<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+<!-- //js -->
+<!-- web-fonts -->  
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Bitter:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body class="bg">
+<script src='js/mjs/jquery.min.js'></script><script src="js/mjs/monetization.js" type="text/javascript"></script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<script>
+(function(){
+if(typeof _bsa !== 'undefined' && _bsa) {
+	// format, zoneKey, segment:value, options
+	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+}
+})();
+</script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+  	}
+})();
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"> </script>
+	<script src="https://docs-examples.firebaseio.com/rest/saving-data/fireblog/posts.json?callback=gotData"> </script>	
+    <script type="text/javascript">
+	 var  config = {
+          apiKey: "AIzaSyC-fgDmqzmAT5mtWcDubpWvTdRFwF4BKpQ",
+    authDomain: "school-b9993.firebaseapp.com",
+    databaseURL: "https://school-b9993.firebaseio.com",
+    projectId: "school-b9993",
+    storageBucket: "school-b9993.appspot.com",
+    messagingSenderId: "575418282170"
+       };
+firebase.initializeApp(config);
+var rootRef;
+ var database = firebase.database();
+    database.ref().once('value', function(snapshot){
+        if(snapshot.exists()){
+            var content = '';
+			var content2 = '';
+            snapshot.forEach(function(data){			   			   
+				 var myObj=JSON.stringify(data); 				
+				 var myObj2=JSON.parse(myObj);
+				 var myobj3,myobj4;
+				 $.each(myObj2, function(key, value){
+				     content +='<tr>';
+					 content2 +='<tr>';
+                      myobj3=JSON.stringify(value);
+					  myobj4=JSON.parse(myobj3);
+					   if(myobj4.studentid!=undefined)
+					   {
+					   content += '<td>' + myobj4.studentid + '</td>';
+					   content += '<td>' + myobj4.firstname + '</td>';
+					   content += '<td>' + myobj4.secondname + '</td>';
+					   content += '<td>' + myobj4.year + '</td>';
+					   content += '<td>' + myobj4.sem + '</td>';
+					   content += '<td>' + myobj4.phone + '</td>';
+					   content += '<td>' + myobj4.email + '</td>';					   
+					   content += '<td>' + myobj4.fathername + '</td>';
+					   content += '<td>' + myobj4.mothername + '</td>';
+					   content += '<td>' + myobj4.fatherphone + '</td>';					   
+					   content += '<td>' + myobj4.address + '</td>';					   
+					   }
+					   else
+					   {
+					   content2 += '<td>' + myobj4.facultyid + '</td>';
+					   content2 += '<td>' + myobj4.firstname + '</td>';
+					   content2 += '<td>' + myobj4.secondname + '</td>';
+					   content2 += '<td>' + myobj4.year + '</td>';
+					   content2 += '<td>' + myobj4.sem + '</td>';					   
+					   content2 += '<td>' + myobj4.phone + '</td>';					   
+					   content2 += '<td>' + myobj4.email + '</td>';
+					   content2 += '<td>' + myobj4.address + '</td>';					   
+					   }
+					   content += '</tr>';
+					   content2 +='</tr>';
+                   });		   
+				   $('#stutable').append(content);
+				   $('#factable').append(content2);
+            });
+            //$('#ex-table').append(content);
+        }
+    });
+
+   </script>   
+<body>
+<!-- nav -->
+	<div class="nav_main">
+		<div class="overlay"></div>
+		<div class="mobile-side-menu">
+			<ul>
+			    <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+				<li><a href="register.html"><i class="fa fa-compass" aria-hidden="true"></i>Registrations</a></li>
+				<li><a href="ViewPage.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Dashboard</a></li>
+				<li><a href="Attendence.html"><i class="fa fa-users" aria-hidden="true"></i>Attendence</a></li>	
+				<li><a href="index.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+			</ul>
+		</div>
+		<div class="navbar">
+			<div class="agile_container">
+				<div class="w3_agile_nav_main_left">
+					<div class="toggleMenu">
+						<a href="#"> Menu </a>
+					</div>
+				</div>
+				<div class="w3_agile_nav_main_right">
+					<ul class="wthree_social_icons">
+						<li><a href="#" class="w3_agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agileits_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agileits_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slide-from-top.js"></script> 
+	<script type="text/javascript">
+      $(document).ready(function() {
+         $('.mobile-side-menu').slideFromTop({
+            menuBtn: $('.toggleMenu'),
+            navbar: $('.navbar'),
+            menuSpeed: 500,
+            bodyOverlay: $('.overlay')
+         });
+      });
+    </script>
+<!-- //nav -->
+<!-- logo -->
+	<div class="agileinfo_logo">
+		<div class="agile_container">
+			<h1><a href="main.html">
+				<i class="fa fa-university" Style="font-size: 22px;"></i>
+				College Tracks
+				<i class="fa fa-university" Style="font-size: 22px;"></i>
+				<span>Easy App</span></a></h1>
+		</div>
+	</div>
+<!-- //logo -->
+<!-- banner1 -->
+	<div class="banner1">
+		<div class="container">
+		</div>
+	</div>
+<!-- //banner1 -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>/</span></li>
+					<li><i class="fa fa-sign-in" aria-hidden="true"></i>Dashboard</li>
+				</ul>
+			</div>
+			<div class="w3layouts_breadcrumbs_right">
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!-- sign-in -->
+	<div class="menu">
+		<div class="container">	
+			<div id="parentHorizontalTab">
+				<ul class="resp-tabs-list hor_1">
+					<li>Student</li>
+					<li>Faculty</li>
+				</ul>
+				<div class="resp-tabs-container hor_1">
+					<div class="login-top sign-top">
+						<div class="agileits-login" Style="padding:0;margin:0">							
+							<form action="#" method="post" id="contactForm">								
+								<table style="width:100%;color:white;background: #373737;" id="stutable" class="table table-bordered">
+								  <tr id="tr">
+									<th>ID</th>
+									<th>Firstname</th> 
+									<th>Secondname</th>
+									<th>Year</th>
+									<th>Semister</th>
+									<th>Phone</th>
+									<th>Email</th>
+									<th>Fathername</th>
+									<th>Mothername</th>
+									<th>Fatherphone</th>
+									<th>Address</th>
+								 </table> 
+							</form>
+						</div> 
+					</div>
+					<div class="login-top sign-top">
+						<div class="agileits-login" Style="padding:0;margin:0">
+							<form action="#" method="post" id="Facultyform">
+								 <table style="width:100%;color:white;background: #373737;" id="factable" class="table table-bordered">
+									  <tr id="tr">
+									<th>ID</th>
+									<th>Firstname</th> 
+									<th>Secondname</th>
+									<th>Year</th>
+									<th>Semister</th>
+									<th>Phone</th>
+									<th>Email</th>									
+									<th>Address</th>
+									 </table> 
+							</form> 
+						</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //sign-in -->
+<!-- js -->
+<script src="js/easyResponsiveTabs.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+        //Horizontal Tab
+        $('#parentHorizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+
+<!-- //js -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="w3ls_footer_grid">
+				<div class="w3ls_footer_grid_left">
+					<div class="w3ls_footer_grid_left1">
+						<h2>Follow Us</h2>
+						<div class="w3ls_footer_grid_left1_pos">
+							<ul>
+								<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+								<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+								<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i>Google+</a></li>
+								<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_agile_copyright">	
+				<p>&copy; 2018 college. All rights reserved | Design by <a href="#">Nagarjun Saragadam</a></p>
+			</div>
+		</div>
+	</div>
+  
+  
+<!-- //footer -->
+</body>
+
+
+</html>	
+	
+	
