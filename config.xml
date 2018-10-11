@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0"  id= "com.Mugo.Register" version   = "1.0.0">
+
+    <preference name="phonegap-version" value="cli-6.5.0" />        
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <name>Register</name>
+    <description>Collage Register</description>
+    <author href="main.html" email="thenagarjun558@gmail.com">Saragadam Nagarjun</author>
+    <content src="main.html" />
+    
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="ct:*"/>
+        <allow-intent href="ct-apps:*"/>
+    </platform>
+    <platform name="winphone" />
+
+</widget>
