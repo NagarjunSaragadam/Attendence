@@ -10,8 +10,8 @@
     <allow-intent href="*" />
     <name>Register</name>
     <description>Collage Register</description>
-    <author href="main.html" email="thenagarjun558@gmail.com">Saragadam Nagarjun</author>
-    <content src="main.html" />
+    <author href="index.html" email="thenagarjun558@gmail.com">Saragadam Nagarjun</author>
+    <content src="index.html" />
     
     <access origin="*"/>
     <allow-intent href="http://*/*"/>
