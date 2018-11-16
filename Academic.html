@@ -73,14 +73,15 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="overlay"></div>
 		<div class="mobile-side-menu">
 			<ul>
-				 <li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-				 <li><a href="Year.html"><i class="fa fa-home" aria-hidden="true"></i>Years</a></li>
-				 <li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Semisters</a></li>
-				 <li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Groups</a></li>
-				<li><a href="register.html"><i class="fa fa-compass" aria-hidden="true"></i>Registrations</a></li>
-				<li><a href="ViewPage.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Dashboard</a></li>
-				<li><a href="Attendence.html"><i class="fa fa-users" aria-hidden="true"></i>Attendence</a></li>	
-				<li><a href="index.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+				<li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+				<li><a href="Academic.html"><i class="fa fa-home" aria-hidden="true"></i>Academic</a></li>
+				<li><a href="Year.html"><i class="fa fa-home" aria-hidden="true"></i>Years</a></li>
+				<li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Semisters</a></li>
+				<li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Groups</a></li>
+			   <li><a href="register.html"><i class="fa fa-compass" aria-hidden="true"></i>Registrations</a></li>
+			   <li><a href="ViewPage.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Dashboard</a></li>
+			   <li><a href="Attendence.html"><i class="fa fa-users" aria-hidden="true"></i>Attendence</a></li>	
+			   <li><a href="index.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
 			</ul>
 		</div>
 		<div class="navbar">
@@ -132,7 +133,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="container">
 			<div class="w3layouts_breadcrumbs_left">
 				<ul>
-					<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>/</span></li>					
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>/</span></li>
+					<li><i class="fa fa-sign-in" aria-hidden="true"></i>Academics</li>
 				</ul>
 			</div>
 			<div class="w3layouts_breadcrumbs_right">
@@ -147,20 +149,35 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="container">	
 			<div id="parentHorizontalTab">
 				<ul class="resp-tabs-list hor_1">
-					<li Style="width: 100%;">Welcome Admin</li>					
+					<li Style="width: 100%;">Add Academice</li>					
 				</ul>
 				<div class="resp-tabs-container hor_1">
 					<div class="login-top sign-top">
-						<div class="agileits-login">							
-							<form action="#" method="post" id="contactForm">																 
+						<div class="agileits-login">
+							<div class="alert">Your message has been sent</div>
+							<form action="#" method="post" id="academicform">																 
+								<select Style="width:100%;height:30px" id="ddlacemedices">
+									<option value="1" >Select Academice</option>
+									<option value="2">BTECH</option>
+									<option value="3">BSC</option>
+									<option value="4">BBA</option>
+									<option value="5">INTERMEDIATE</option>
+								  </select>	
+								
+				                  	
+								
+								<div class="w3ls-submit">
+									<div class="submit-text">
+								        <button class="register" value="SUBMIT" type="submit">Submit</button>
+									</div>	
+								</div>	
 							</form>
 						</div> 
-					</div>							
-					</div>
+					</div>				
 				</div>
 			</div>
 		</div>
-	
+	</div>
 <!-- //sign-in -->
 <!-- js -->
 <script src="js/easyResponsiveTabs.js"></script>
@@ -204,12 +221,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="clearfix"> </div>
 			</div>
 			<div class="w3_agile_copyright">	
-				<p>&copy; 2018 college. All rights reserved | Design by <a href="#">Nagarjuna Saragadam</a></p>
+				<p>&copy; 2018 college. All rights reserved | Design by <a href="#">Nagarjun Saragadam</a></p>
 			</div>
 		</div>
 	</div>
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
- 
+  <script src="academic.js"></script>
 <!-- //footer -->
 </body>
 
